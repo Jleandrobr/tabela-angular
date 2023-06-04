@@ -42,7 +42,7 @@ export class MantemUsuarioComponent {
       );
     } else {
       this.usuarioService.atualizar(this.usuarioDeManutencao).subscribe(
-        usuarioAtualizado => this.mensagemService.erro('Usuário atualizado com sucesso!')
+        usuarioAtualizado => this.mensagemService.alerta('Usuário atualizado com sucesso!')
       );
     }
     this.usuarioDeManutencao = new Usuario();

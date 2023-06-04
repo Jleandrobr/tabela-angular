@@ -6,6 +6,8 @@
     <mat-card-header>
       <mat-card-title>{{usuario.nome | titlecase}}</mat-card-title>
       <mat-card-subtitle *ngIf="usuario.cpf.length > 0">CPF: {{usuario.cpf | cpf}}</mat-card-subtitle>
+      <mat-card-subtitle *ngIf="usuario.telefone.length > 0">TEL: {{usuario.telefone | telefone}}</mat-card-subtitle>
+
     </mat-card-header>
     <mat-card-content>
       Professor em.... Tem {{usuario.idade}} anos
